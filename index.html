@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#10152b">
+<title>GG Mouse Pro — Super Fun Zone</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#"><span class="logo">GG</span><span>GG Mouse Pro<small>SUPER FUN ZONE</small></span></a>
+  <button class="menu" id="menuBtn" aria-label="মেনু">☰</button>
+  <nav id="nav"><a href="#gaming">Gaming</a><a href="#fun">Fun Zone</a><a href="#love">Love</a><a href="#quiz">Quiz</a><a href="#poster">Poster Maker</a></nav>
+</header>
+<main>
+<section class="hero">
+  <div class="pill">✨ তোমার নিজের বিনোদনের দুনিয়া</div>
+  <h1>খেলো, হাসো,<br><span>চ্যালেঞ্জ নাও!</span></h1>
+  <p>গেমিং টিপস, বাংলা জোকস, কুইজ আর নিজের নামের পোস্টার—সব এক জায়গায়।</p>
+  <div class="hero-actions"><a class="btn primary" href="#fun">মজা শুরু করো ↓</a><button class="btn ghost" id="shareTop">বন্ধুদের শেয়ার করো ↗</button></div>
+  <div class="stats"><div><b>🎮</b><span>Gaming</span></div><div><b>😂</b><span>বাংলা জোকস</span></div><div><b>🧠</b><span>কুইজ</span></div></div>
+</section>
+<section class="section" id="gaming"><div class="section-title"><div><span class="eyebrow">LEVEL UP</span><h2>🎮 Gaming Zone</h2></div><span class="tag">FREE FIRE</span></div>
+<div class="grid three"><article class="card game"><div class="emoji">🎯</div><h3>Aim Practice</h3><p>প্রতিদিন Training Ground-এ drag headshot ও sensitivity প্র্যাকটিস করো।</p></article><article class="card game"><div class="emoji">🛡️</div><h3>Survival Tips</h3><p>Zone-এর দিকে আগে যাও, cover ব্যবহার করো এবং team-এর সঙ্গে থাকো।</p></article><article class="card game"><div class="emoji">⚙️</div><h3>Settings Tips</h3><p>নিজের ফোন অনুযায়ী sensitivity ধীরে ধীরে বদলে পরীক্ষা করো।</p></article></div>
+</section>
+<section class="section" id="fun"><div class="section-title"><div><span class="eyebrow">SMILE BREAK</span><h2>😂 Fun & Jokes</h2></div></div>
+<div class="card joke-box"><div class="emoji big">🤣</div><p id="joke">শিক্ষক: বলো তো, অলসতার সবচেয়ে বড় উদাহরণ কী?</p><p class="joke-answer" id="jokeAnswer">ছাত্র: স্যার, উত্তরটা কাল বলব—আজ খুব ক্লান্ত!</p><button class="btn primary" id="newJoke">আরেকটা জোকস 😄</button></div>
+</section>
+<section class="section" id="love"><div class="section-title"><div><span class="eyebrow">SEND SOME LOVE</span><h2>💌 Love & Friendship</h2></div></div>
+<div class="grid two"><article class="card love-card"><div class="emoji">💖</div><h3>বন্ধুত্ব মানেই ভরসা</h3><p>দূরে থাকলেও সত্যিকারের বন্ধু সব সময় হৃদয়ের কাছেই থাকে।</p><button class="text-btn share-quote" data-text="দূরে থাকলেও সত্যিকারের বন্ধু সব সময় হৃদয়ের কাছেই থাকে। 💖">শেয়ার করো ↗</button></article><article class="card love-card"><div class="emoji">🌻</div><h3>একটু ভালোবাসা</h3><p>তোমার একটা হাসি কারও খারাপ দিনটাকে সুন্দর করে দিতে পারে।</p><button class="text-btn share-quote" data-text="তোমার একটা হাসি কারও খারাপ দিনটাকে সুন্দর করে দিতে পারে। 🌻">শেয়ার করো ↗</button></article></div>
+</section>
+<section class="section" id="quiz"><div class="section-title"><div><span class="eyebrow">BRAIN POWER</span><h2>🧠 Quiz Challenge</h2></div><span class="tag">১ প্রশ্ন</span></div>
+<div class="card quiz-card"><p class="question" id="question">বাংলাদেশের জাতীয় ফুল কোনটি?</p><div id="answers" class="answers"><button data-correct="false">গোলাপ</button><button data-correct="true">শাপলা</button><button data-correct="false">জবা</button><button data-correct="false">সূর্যমুখী</button></div><p id="quizFeedback" aria-live="polite">সঠিক উত্তর বেছে নাও!</p><button class="btn ghost" id="nextQuiz">পরের প্রশ্ন →</button></div>
+</section>
+<section class="section" id="poster"><div class="section-title"><div><span class="eyebrow">MAKE IT YOURS</span><h2>🎨 Name Poster Maker</h2></div></div>
+<div class="poster-layout"><div class="card form-card"><label for="posterName">তোমার নাম লিখো</label><input id="posterName" maxlength="24" placeholder="যেমন: Emon"><label for="posterLine">ছোট্ট ক্যাপশন</label><input id="posterLine" maxlength="55" placeholder="যেমন: Dream Big ✨"><button class="btn primary" id="makePoster">পোস্টার বানাও</button><button class="btn ghost" id="downloadPoster">PNG ডাউনলোড</button></div><canvas id="posterCanvas" width="900" height="600" aria-label="তোমার পোস্টার"></canvas></div>
+</section>
+<section class="section share-section"><h2>বন্ধুদেরও মজা করতে দাও! 🚀</h2><p>সাইটটি বন্ধুদের সঙ্গে শেয়ার করো।</p><button class="btn primary" id="shareBtn">শেয়ার করো ↗</button><button class="btn ghost" id="copyBtn">লিংক কপি</button><p id="shareStatus" aria-live="polite"></p></section>
+</main>
+<footer><a class="brand" href="#"><span class="logo">GG</span><span>GG Mouse Pro<small>SUPER FUN ZONE</small></span></a><p>© <span id="year"></span> GG Mouse Pro · Made for fun 💜</p><small>Fan-made gaming tips site; not affiliated with Garena or Free Fire.</small></footer>
+<script src="script.js"></script>
+</body></html>
